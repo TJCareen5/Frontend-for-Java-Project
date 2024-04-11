@@ -7,9 +7,11 @@ import AuthorList from './components/AuthorList';
 import AddBook from './components/AddBook';
 import AddAuthor from './components/AddAuthor';
 import EditAuthor from './components/EditAuthor';
+import EditBook from './components/EditBook';
 import GetAuthorByID from './components/GetAuthorByID';
 import GetBookByISBN from './components/GetBookByISBN';
 import DeleteAuthor from './components/DeleteAuthor';
+import DeleteBook from './components/DeleteBook';
 
 /**
  * App component that defines the routes for the application
@@ -25,9 +27,11 @@ function App() {
         <Route path="/add-book" element={<AddBook />} />
         <Route path="/add-author" element={<AddAuthor />} />
         <Route path="/edit-author" element={<EditAuthor />} />
+        <Route path="/edit-book" element={<EditBook />} />
         <Route path="/get-author" element={<GetAuthorByID />} />
         <Route path="/get-book" element={<GetBookByISBN />} />
         <Route path="/delete-author" element={<DeleteAuthor />} />
+        <Route path="/delete-book" element={<DeleteBook />} />
       </Routes>
     </Router>
     </div>
